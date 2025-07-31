@@ -12,7 +12,7 @@ from telegram.ext import (
     filters
 )
 
-TOKEN = "8041206857:AAHwo7fQYNFSUL5bKUiQKT1albD0-DBfd0s"
+TOKEN = os.getenv("BOT_TOKEN")
 
 model = whisper.load_model("base")
 
